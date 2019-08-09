@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="MvcPart20190726104756" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\bquid\\source\\repos\\MvcPart\\MvcPart\\obj\\Release\\netcoreapp2\.2\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="MvcPart.Data.ApplicationDbContext" description="" value="Data Source=tcp:mvcpart20190726104756dbserver.database.windows.net,1433;Initial Catalog=MvcPart20190726104756_db;User Id=bradley.quid@mvcpart20190726104756dbserver;Password=Xt2el3pf99k!" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\bquid\\source\\repos\\MvcPart\\MvcPart\\obj\\Release\\netcoreapp2\.2\\PubTmp\\EFSQLScripts\\MvcPart\.Data\.ApplicationDbContext\.sql$" />
+  </parameter>
+  <parameter name="MvcPart.Models.MvcPartContext" description="" value="Data Source=tcp:mvcpart20190726104756dbserver.database.windows.net,1433;Initial Catalog=MvcPart20190726104756_db;User Id=bradley.quid@mvcpart20190726104756dbserver;Password=Xt2el3pf99k!" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\bquid\\source\\repos\\MvcPart\\MvcPart\\obj\\Release\\netcoreapp2\.2\\PubTmp\\EFSQLScripts\\MvcPart\.Models\.MvcPartContext\.sql$" />
+  </parameter>
+</parameters>

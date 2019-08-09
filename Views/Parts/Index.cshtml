@@ -1,0 +1,69 @@
+﻿@model IEnumerable<MvcPart.Models.Part>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Parts List</h1>
+<h2>@ViewData["Message"]</h2>
+
+
+<form asp-controller="Parts" asp-actions="Index">
+    <p>
+        Project: <input type ="text" name="SearchString" />
+        <input class="btn btn-primary" type="submit" value="Search" />
+    </p>
+</form>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>Part Name</th>
+            <th>Project Used For</th>
+            <th>Date & Time</th>
+            <th>Submitted By</th>
+            <th>Flagged</th>
+            <th></th>
+            @if (ViewContext.HttpContext.User.IsInRole("Manager"))
+            {
+                <th>Manage</th>
+            }
+            </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr style="background-color: @item.Color;">
+            <td style="color:@item.TextColor;">
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td style="color:@item.TextColor;">
+                @Html.DisplayFor(modelItem => item.UsedFor)
+            </td>
+            <td style="color:@item.TextColor;">
+                @Html.DisplayFor(modelItem => item.Now)
+            </td>
+            <td style="color:@item.TextColor;">
+                @System.Environment.MachineName
+            </td>
+            <td style="color:@item.TextColor;">
+                @Html.DisplayFor(modelItem => item.Flagged)
+            </td>
+            <td>
+                <a class="btn btn-outline-danger" asp-action="Flag" asp-route-id="@item.Id">Flag</a>
+                @if (ViewContext.HttpContext.User.IsInRole("Manager"))
+                {
+                    <a class="btn btn-success" asp-action="Unflag" asp-route-id="@item.Id">UnFlag</a>
+                }
+            </td>
+            @if (ViewContext.HttpContext.User.IsInRole("Manager"))
+            {
+            <td>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a> 
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Details</a> 
+                <a class="btn btn-dark" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+            }
+        </tr>
+}
+    </tbody>
+</table>

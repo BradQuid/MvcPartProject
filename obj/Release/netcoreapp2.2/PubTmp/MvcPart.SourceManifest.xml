@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\bquid\source\repos\MvcPart\MvcPart\obj\Release\netcoreapp2.2\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\bquid\source\repos\MvcPart\MvcPart\obj\Release\netcoreapp2.2\PubTmp\EFSQLScripts\MvcPart.Data.ApplicationDbContext.sql" />
+  <dbfullsql path="C:\Users\bquid\source\repos\MvcPart\MvcPart\obj\Release\netcoreapp2.2\PubTmp\EFSQLScripts\MvcPart.Models.MvcPartContext.sql" />
+</sitemanifest>

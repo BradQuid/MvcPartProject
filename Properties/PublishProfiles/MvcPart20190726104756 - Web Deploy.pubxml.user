@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMpnwMXVNskaMreNo6tKQVwAAAAACAAAAAAAQZgAAAAEAACAAAADTgT8+3pBx/skcMz7dz4ZJRni/asPoMwTnDiZyBi9tXgAAAAAOgAAAAAIAACAAAAAm5s31NfbqsMWmT36nTlbfH5V8D3yOzIRMTmIwG6mIyoAAAABq7tAbVJcChfhtrj95cG07WWO3EgBRIgDwUOBlANVNkZxMv6g5TggI61C1S2v+nIUOIgiuErqEH+xzb4WtFz2wSWs70PxZo7oUH/X6DkVqh8FpTioEsUil0+CXVWiucs5hzc+t8TjENXw5M60765u1E4WVdAJPhCFVTRkwOtip20AAAAButPItdSVwlhQo6p50r9TJKhn85eHdU+6rL0zea1uxvBVpsWV/hM/OuzmMTymzwK2yDV1MwRrHe0ZmIyi9ErvP</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="&quot;Server=(localdb)\\mssqllocaldb">
+      <Value>Data Source=tcp:mvcpart20190726104756dbserver.database.windows.net,1433%3bInitial Catalog=MvcPart20190726104756_db%3bUser Id=bradley.quid%40mvcpart20190726104756dbserver%3bPassword=Xt2el3pf99k!</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="Database=aspnet-MvcPart-DF8A7E20-C7B7-44D4-974E-7918C9F66073">
+      <Value>Data Source=tcp:mvcpart20190726104756dbserver.database.windows.net,1433%3bInitial Catalog=MvcPart20190726104756_db%3bUser Id=bradley.quid%40mvcpart20190726104756dbserver%3bPassword=Xt2el3pf99k!</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="Trusted_Connection=True">
+      <Value>Data Source=tcp:mvcpart20190726104756dbserver.database.windows.net,1433%3bInitial Catalog=MvcPart20190726104756_db%3bUser Id=bradley.quid%40mvcpart20190726104756dbserver%3bPassword=Xt2el3pf99k!</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="MultipleActiveResultSets=true&quot;">
+      <Value>Data Source=tcp:mvcpart20190726104756dbserver.database.windows.net,1433%3bInitial Catalog=MvcPart20190726104756_db%3bUser Id=bradley.quid%40mvcpart20190726104756dbserver%3bPassword=Xt2el3pf99k!</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:mvcpart20190726104756dbserver.database.windows.net,1433%3bInitial Catalog=MvcPart20190726104756_db%3bUser Id=bradley.quid%40mvcpart20190726104756dbserver%3bPassword=Xt2el3pf99k!</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="MvcPartContext">
+      <Value>Data Source=tcp:mvcpart20190726104756dbserver.database.windows.net,1433%3bInitial Catalog=MvcPart20190726104756_db%3bUser Id=bradley.quid%40mvcpart20190726104756dbserver%3bPassword=Xt2el3pf99k!</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="MvcPart.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:mvcpart20190726104756dbserver.database.windows.net,1433%3bInitial Catalog=MvcPart20190726104756_db%3bUser Id=bradley.quid%40mvcpart20190726104756dbserver%3bPassword=Xt2el3pf99k!</Value>
+    </EFMigrations>
+    <EFMigrations Include="MvcPart.Models.MvcPartContext">
+      <Value>Data Source=tcp:mvcpart20190726104756dbserver.database.windows.net,1433%3bInitial Catalog=MvcPart20190726104756_db%3bUser Id=bradley.quid%40mvcpart20190726104756dbserver%3bPassword=Xt2el3pf99k!</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

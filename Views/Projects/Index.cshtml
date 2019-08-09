@@ -1,0 +1,41 @@
+﻿@model IEnumerable<MvcPart.Models.Project>
+
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<h1>Projects</h1>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                Project Name
+            </th>
+            @if (ViewContext.HttpContext.User.IsInRole("Manager"))
+            {
+                <th>Manage</th>
+            }
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @if (ViewContext.HttpContext.User.IsInRole("Manager"))
+                {
+                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                }
+                @if (ViewContext.HttpContext.User.IsInRole("Manager"))
+                {
+                    <a class="btn btn-dark" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                }
+            </td>
+        </tr>
+}
+</tbody>
+</table>
